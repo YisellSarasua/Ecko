@@ -253,4 +253,57 @@
   text-align: left;
 }
 
+#galeria {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+  margin-top: 100px;
+}
+#galeria h3 {
+  font-family: littleQueen;
+  font-size: 47px;
+  font-weight: 600;
+  margin-bottom: 100px;
+}
+#galeria .originales {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 200px;
+}
+#galeria .originales .tituloPersonajes p {
+  font-family: "Poppins", sans-serif;
+  font-size: 25px;
+  font-weight: 500;
+}
+#galeria .originales .personajes {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+#galeria .originales .personajes img {
+  width: 15%;
+}
+#galeria .customizables {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#galeria .customizables .tituloPersonajes p {
+  font-family: "Poppins", sans-serif;
+  font-size: 25px;
+  font-weight: 500;
+}
+#galeria .customizables .personajes {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+#galeria .customizables .personajes img {
+  width: 15%;
+}
+
 /*# sourceMappingURL=style.css.map */
