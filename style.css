@@ -1,0 +1,114 @@
+@font-face {
+  font-family: littleQueen;
+  src: url(font/Little\ Queen.ttf);
+}
+#Navbar {
+  width: 100%;
+  height: 113px;
+  position: relative;
+  z-index: 1;
+  background-color: #548084;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+#Navbar .LogoEco01 {
+  height: 65px;
+  margin-left: 142px;
+}
+#Navbar .navbar {
+  width: 50%;
+  margin-right: 145px;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: end;
+}
+#Navbar .navbar ul {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+#hero {
+  width: 100%;
+}
+#hero #fondoHero {
+  width: 100%;
+  border: solid 1px red;
+}
+#hero #fondoHero svg {
+  position: relative;
+  bottom: 200px;
+  width: 100%;
+}
+#hero .textoHero {
+  position: relative;
+  top: -1100px;
+  left: 10%;
+  width: 30%;
+}
+#hero .textoHero p {
+  font-family: "Poppins", sans-serif;
+  font-size: 60px;
+  font-weight: 600;
+  color: #ffffff;
+  height: 70PX;
+}
+#hero .textoHero h1 {
+  font-family: littleQueen;
+  font-size: 75px;
+  color: #ffffff;
+}
+#hero .textoHero h3 {
+  width: 62%;
+  font-family: "Poppins", sans-serif;
+  font-size: 25px;
+  font-weight: 300;
+  color: #ffffff;
+}
+#hero .imgHero {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  width: 50%;
+  height: 800px;
+  position: relative;
+  top: -1700px;
+  left: 45%;
+  border: solid 1px rgb(0, 166, 255);
+}
+#hero .imgHero .rectangulo01 {
+  border: solid 1px yellow;
+  height: 500px;
+  position: relative;
+  left: 640px;
+  top: 100px;
+}
+#hero .imgHero .rectangulo01 svg {
+  height: 500px;
+}
+#hero .imgHero .img01 {
+  border: solid 1px rgb(107, 36, 123);
+  position: relative;
+  right: 200px;
+  top: 50px;
+  z-index: 1;
+}
+#hero .imgHero .img01 img {
+  height: 800px;
+}
+#hero .imgHero .img02 {
+  border: solid 1px rgb(107, 36, 123);
+  position: relative;
+  right: 570px;
+}
+#hero .imgHero .img02 img {
+  height: 800px;
+}
+
+/*# sourceMappingURL=style.css.map */
