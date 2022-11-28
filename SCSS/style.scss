@@ -1,6 +1,6 @@
 @font-face{
     font-family: littleQueen;
-    src: url(font/Little\ Queen.ttf);
+    src: url(/font/LittleQueen.ttf);
 }
 
 #Navbar{
@@ -53,13 +53,15 @@
 
 #hero{
     width: 100%;
+ //   border: solid 1px rgb(132, 0, 255);
+    height: 1400px;//ajustar
     #fondoHero{
         width: 100%;
-        border: solid 1px red;
+        
 
         svg{
             position: relative;
-            bottom: 200px;
+            bottom: 170px;
             width: 100%;
         }
 
@@ -114,14 +116,27 @@
         position: relative;
         top: -1700px;
         left:45% ;
-        border: solid 1px rgb(0, 166, 255);
+        
 
             .rectangulo01{
-                border: solid 1px yellow;
-                height: 500px;
+               
+                height: 20%;
                 position: relative;
-                left: 640px;
+                left: 840px;
                 top: 100px;
+               
+                svg{
+                    height:500px;
+                }
+            }
+
+            .rectangulo02{
+               
+                height: 20%;
+                position: relative;
+                top: 250px;
+                left: 100px;
+               
                
                 svg{
                     height:500px;
@@ -130,9 +145,9 @@
         
 
             .img01{
-                border: solid 1px rgb(107, 36, 123);
+               
                 position: relative;
-                right: 200px;
+                right: 800px;
                
                 top:50px;
                 
@@ -143,9 +158,9 @@
 
             }
             .img02{
-                border: solid 1px rgb(107, 36, 123);
+                
                 position: relative;
-                right: 570px;
+                right: 1170px;
                
                 
                 img{
@@ -156,5 +171,68 @@
 
     }
 
+
+}
+
+#productos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    height: 850px;
+    padding-top: 100px;
+
+
+    h3{
+        font-family: littleQueen;
+        font-size: 47px;
+        font-weight: 600;
+    }
+
+    .productosCard{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-around;
+
+
+        .cardProductos{
+            
+            width: 20%;
+
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            img{
+                height: 440px;
+                margin-bottom: 15px;
+            }
+            p{
+                font-family: 'Poppins', sans-serif;
+                font-size: 25px;
+                font-weight: 700;
+            }
+
+            a{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 233px;
+                height: 65px;
+                border-radius: 11px;
+                background-color: #E59D15;
+                border-color: none;
+
+                font-family: 'Poppins', sans-serif;
+                font-size: 18px;
+                font-weight: 400;
+                text-decoration: none;
+                color: black;
+            }
+        }
+    }
 
 }
