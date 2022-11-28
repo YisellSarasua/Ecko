@@ -47,7 +47,7 @@
 }
 #hero .textoHero {
   position: relative;
-  top: -1100px;
+  bottom: 1100px;
   left: 10%;
   width: 30%;
 }
@@ -164,6 +164,93 @@
   font-weight: 400;
   text-decoration: none;
   color: black;
+}
+
+#proceso {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+}
+#proceso h2 {
+  font-family: littleQueen;
+  font-size: 47px;
+  font-weight: 600;
+  margin-bottom: 50px;
+}
+#proceso p {
+  width: 80%;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  text-align: center;
+}
+
+#medidas {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 100px;
+}
+#medidas .card02 {
+  height: 213px;
+  margin: 5%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+#medidas .card02 .textoCard02 {
+  height: 90px;
+  margin-left: 50px;
+}
+#medidas .card02 .textoCard02 .tGrande {
+  height: 30px;
+  font-family: "Poppins", sans-serif;
+  font-size: 25px;
+  font-weight: 600;
+}
+#medidas .card02 .textoCard02 p {
+  height: 30px;
+  font-family: "Poppins", sans-serif;
+  font-size: 25px;
+  font-weight: 300;
+}
+
+#quienesSomos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+  margin-top: 100px;
+}
+#quienesSomos h3 {
+  font-family: littleQueen;
+  font-size: 47px;
+  font-weight: 600;
+}
+#quienesSomos .valores {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 60px;
+}
+#quienesSomos .valores .card03 {
+  width: 20%;
+}
+#quienesSomos .valores .card03 h4 {
+  font-family: "Poppins", sans-serif;
+  font-size: 32px;
+  font-weight: 500;
+  text-align: center;
+}
+#quienesSomos .valores .card03 p {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  text-align: left;
 }
 
 /*# sourceMappingURL=style.css.map */
