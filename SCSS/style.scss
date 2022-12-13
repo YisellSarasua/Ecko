@@ -55,13 +55,16 @@
     width: 100%;
  //   border: solid 1px rgb(132, 0, 255);
     height: 1400px;//ajustar
+    position: relative;
+    top: -200px;
+    left: 0;
+
     #fondoHero{
         width: 100%;
         
 
         svg{
-            position: relative;
-            bottom: 170px;
+          
             width: 100%;
         }
 
@@ -71,8 +74,8 @@
 
     .textoHero{
 
-        position: relative;
-        bottom: 1100px;
+        position: absolute;
+       top: 30%;
         left:10% ;
        
         width:30% ;
@@ -82,23 +85,21 @@
             font-size: 60px;
             font-weight: 600;
             color: #ffffff;
-            height: 70PX;
-
-
+            height: 70px;
         }
+
         h1{
             font-family: littleQueen;
             font-size: 75px;
             color: #ffffff;
-
         }
-       h3{
+
+        h3{
             width: 62%;
             font-family: 'Poppins', sans-serif;
             font-size: 25px;
             font-weight: 300;
             color: #ffffff;
-
        }
 
     }
@@ -113,17 +114,19 @@
         width: 50%;
         height: 800px;
 
-        position: relative;
-        top: -1700px;
+     
+
+        position: absolute;
+        top: 300px;
         left:45% ;
         
 
             .rectangulo01{
                
                 height: 20%;
-                position: relative;
-                left: 840px;
-                top: 100px;
+                position: absolute;
+                left: 10%;
+                top: 50px;
                
                 svg{
                     height:500px;
@@ -133,9 +136,9 @@
             .rectangulo02{
                
                 height: 20%;
-                position: relative;
+                position: absolute;
                 top: 250px;
-                left: 100px;
+                left: 10%;
                
                
                 svg{
@@ -146,12 +149,11 @@
 
             .img01{
                
-                position: relative;
-                right: 800px;
-               
-                top:50px;
-                
+                position: absolute;
+                left: 10%;
+                top:40px;
                 z-index: 1;
+
                 img{
                     height: 800px;
                 }
@@ -159,8 +161,9 @@
             }
             .img02{
                 
-                position: relative;
-                right: 1170px;
+                position: absolute;
+                left: 28%;
+                top: 0px;
                
                 
                 img{
@@ -435,6 +438,40 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+            margin-bottom: 200px;
+          
+            
+            .tituloPersonajes{
+                p{
+                    font-family: 'Poppins', sans-serif;
+                    font-size: 25px;
+                    font-weight: 500;
+                }
+
+            }
+
+
+            .personajes{
+                
+                width: 100%;
+                display: flex;
+                justify-content: space-around;
+
+                img{
+                    width: 15%;
+                    
+                }
+                
+
+            }
+
+        }
+        .reciclables{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 200px;
           
             
             .tituloPersonajes{
@@ -471,5 +508,254 @@
    
 }
 
+#envios{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
+    h3{
+
+        font-family: littleQueen;
+        font-size: 47px;
+        font-weight: 600;
+        margin-bottom: 100px;
+    }
+
+    .card04{
+        display: flex;
+        flex-direction: row;
+        width: 40%;
+        margin-bottom: 150px;
+        
+
+        .icono{
+            width: 30%;
+          
+        }
+
+        .texto{
+            h6{
+                font-family: 'Poppins', sans-serif;
+                font-size: 30px;
+                font-weight: 600;
+            }
+            p{
+                font-family: 'Poppins', sans-serif;
+                font-size: 25px;
+                font-weight: 400;
+
+            }
+        }
+
+    }
+}
+
+#contacto{
+    
+   
+    .fondo{
+           
+        height: 1500px;
+        position: relative;
+        bottom:0px;
+        left: 0px;
+        z-index: -1;
+
+        .form{
+
+    
+            width: 100%;
+            height: 1000px;
+           
+           
+            
+            position: absolute;
+            top: 10%;
+            display: flex;
+            flex-direction: row;
+         
+            
+    
+            .logoContacto{
+                width: 50%;
+                
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+               
+              
+                img{
+                    
+                }
+            }
+    
+            .formulario{
+                width: 50%;
+               
+
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+    
+                h3{
+          
+                    font-family: littleQueen;
+                    font-size: 47px;
+                    font-weight: 600;
+                    
+                    position: absolute;
+                    top: 20px;
+                
+                }
+                
+               
+    
+                .mb-3{
+                    width: 50%;
+                    
+                    
+                
+    
+                    label {
+                        background-color: transparent;
+                        border-color: transparent;
+                    }
+    
+                    input{
+                        background-color: #D9D9D9;
+                    }
+                    textarea{
+                        background-color: #D9D9D9;
+    
+                    }
+
+                   
+                }
+
+                .BotonEnviar{
+
+                   
+                    width: 50%;
+                    display: flex;
+                    justify-content: end;
+                    
+                    
+                    
+                    a{
+                        margin-top: 20px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 233px;
+                        height: 65px;
+                        border-radius: 11px;
+                        background-color: #E59D15;
+                        border-color: none;
+
+                        font-family: 'Poppins', sans-serif;
+                        font-size: 18px;
+                        font-weight: 400;
+                        text-decoration: none;
+                        color: black;
+
+                    }
+                    
+
+
+                }
+            }
+    
+        }
+    
+       
+       
+    }
+
+   
+
+
+  
+
+}
+
+#puntosDeVenta{
+    height: 900px;
+    background-color: #373435;
+   
+    z-index: 1;
+
+    display: flex;
+    flex-direction: column;
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+    color: #ffffff;
+
+    h3{
+        margin-left: 6%;
+        padding-top: 100px;
+        padding-bottom: 100px;
+        font-family: littleQueen;
+        font-size: 47px;
+        font-weight: 600;
+
+    }
+
+
+
+    
+    div{
+        display: flex;
+        width: 100%;
+        flex-direction: row; 
+        justify-content: space-around; 
+        
+        
+
+        .direccion{
+            width: 220px;
+            display: flex;
+            flex-direction: column;
+            
+
+            font-family: 'Poppins', sans-serif;
+            font-size: 16px;
+            font-weight:300;
+
+        }
+
+        .redes{
+            width: 150px;
+            display: flex;
+            flex-direction: column;
+           
+
+            p{
+                font-family: 'Poppins', sans-serif;
+                font-size: 16px;
+                font-weight:400;
+                text-align: right;
+            }
+
+            div{
+                
+                justify-content: center;
+
+                a{
+                    margin: 5px;
+                }
+            }
+        }
+
+
+
+        
+      }
+
+    
+}
 

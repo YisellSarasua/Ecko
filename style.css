@@ -36,18 +36,19 @@
 #hero {
   width: 100%;
   height: 1400px;
+  position: relative;
+  top: -200px;
+  left: 0;
 }
 #hero #fondoHero {
   width: 100%;
 }
 #hero #fondoHero svg {
-  position: relative;
-  bottom: 170px;
   width: 100%;
 }
 #hero .textoHero {
-  position: relative;
-  bottom: 1100px;
+  position: absolute;
+  top: 30%;
   left: 10%;
   width: 30%;
 }
@@ -56,7 +57,7 @@
   font-size: 60px;
   font-weight: 600;
   color: #ffffff;
-  height: 70PX;
+  height: 70px;
 }
 #hero .textoHero h1 {
   font-family: littleQueen;
@@ -77,40 +78,41 @@
   justify-content: center;
   width: 50%;
   height: 800px;
-  position: relative;
-  top: -1700px;
+  position: absolute;
+  top: 300px;
   left: 45%;
 }
 #hero .imgHero .rectangulo01 {
   height: 20%;
-  position: relative;
-  left: 840px;
-  top: 100px;
+  position: absolute;
+  left: 10%;
+  top: 50px;
 }
 #hero .imgHero .rectangulo01 svg {
   height: 500px;
 }
 #hero .imgHero .rectangulo02 {
   height: 20%;
-  position: relative;
+  position: absolute;
   top: 250px;
-  left: 100px;
+  left: 10%;
 }
 #hero .imgHero .rectangulo02 svg {
   height: 500px;
 }
 #hero .imgHero .img01 {
-  position: relative;
-  right: 800px;
-  top: 50px;
+  position: absolute;
+  left: 10%;
+  top: 40px;
   z-index: 1;
 }
 #hero .imgHero .img01 img {
   height: 800px;
 }
 #hero .imgHero .img02 {
-  position: relative;
-  right: 1170px;
+  position: absolute;
+  left: 28%;
+  top: 0px;
 }
 #hero .imgHero .img02 img {
   height: 800px;
@@ -291,6 +293,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 200px;
 }
 #galeria .customizables .tituloPersonajes p {
   font-family: "Poppins", sans-serif;
@@ -304,6 +307,179 @@
 }
 #galeria .customizables .personajes img {
   width: 15%;
+}
+#galeria .reciclables {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 200px;
+}
+#galeria .reciclables .tituloPersonajes p {
+  font-family: "Poppins", sans-serif;
+  font-size: 25px;
+  font-weight: 500;
+}
+#galeria .reciclables .personajes {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+#galeria .reciclables .personajes img {
+  width: 15%;
+}
+
+#envios {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#envios h3 {
+  font-family: littleQueen;
+  font-size: 47px;
+  font-weight: 600;
+  margin-bottom: 100px;
+}
+#envios .card04 {
+  display: flex;
+  flex-direction: row;
+  width: 40%;
+  margin-bottom: 150px;
+}
+#envios .card04 .icono {
+  width: 30%;
+}
+#envios .card04 .texto h6 {
+  font-family: "Poppins", sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+}
+#envios .card04 .texto p {
+  font-family: "Poppins", sans-serif;
+  font-size: 25px;
+  font-weight: 400;
+}
+
+#contacto .fondo {
+  height: 1500px;
+  position: relative;
+  bottom: 0px;
+  left: 0px;
+  z-index: -1;
+}
+#contacto .fondo .form {
+  width: 100%;
+  height: 1000px;
+  position: absolute;
+  top: 10%;
+  display: flex;
+  flex-direction: row;
+}
+#contacto .fondo .form .logoContacto {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#contacto .fondo .form .formulario {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#contacto .fondo .form .formulario h3 {
+  font-family: littleQueen;
+  font-size: 47px;
+  font-weight: 600;
+  position: absolute;
+  top: 20px;
+}
+#contacto .fondo .form .formulario .mb-3 {
+  width: 50%;
+}
+#contacto .fondo .form .formulario .mb-3 label {
+  background-color: transparent;
+  border-color: transparent;
+}
+#contacto .fondo .form .formulario .mb-3 input {
+  background-color: #D9D9D9;
+}
+#contacto .fondo .form .formulario .mb-3 textarea {
+  background-color: #D9D9D9;
+}
+#contacto .fondo .form .formulario .BotonEnviar {
+  width: 50%;
+  display: flex;
+  justify-content: end;
+}
+#contacto .fondo .form .formulario .BotonEnviar a {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 233px;
+  height: 65px;
+  border-radius: 11px;
+  background-color: #E59D15;
+  border-color: none;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: none;
+  color: black;
+}
+
+#puntosDeVenta {
+  height: 900px;
+  background-color: #373435;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  font-family: "Poppins", sans-serif;
+  font-size: 25px;
+  font-weight: 400;
+  color: #ffffff;
+}
+#puntosDeVenta h3 {
+  margin-left: 6%;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  font-family: littleQueen;
+  font-size: 47px;
+  font-weight: 600;
+}
+#puntosDeVenta div {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-around;
+}
+#puntosDeVenta div .direccion {
+  width: 220px;
+  display: flex;
+  flex-direction: column;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+}
+#puntosDeVenta div .redes {
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+}
+#puntosDeVenta div .redes p {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: right;
+}
+#puntosDeVenta div .redes div {
+  justify-content: center;
+}
+#puntosDeVenta div .redes div a {
+  margin: 5px;
 }
 
 /*# sourceMappingURL=style.css.map */
