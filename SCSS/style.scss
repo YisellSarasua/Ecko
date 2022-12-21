@@ -3,15 +3,29 @@
     src: url(/font/LittleQueen.ttf);
 }
 
+$medidaspantallas: (
+    sm: 540px,
+    md: 983px,
+    lg: 940px,
+    mv:300px,
+    tb:400px,
+);
+
+@mixin media-up ($medidaspantalla){
+   @media screen and (max-width: map-get($medidaspantallas, $medidaspantalla)) {
+    @content;
+    
+   }
+}
+
+
 #Navbar{
-    width: 100%;
-    height: 113px;
+    
+   
 
     position: relative;
     z-index: 1;
-
-
-
+    
     background-color: #548084;
     
     display: flex;
@@ -20,30 +34,33 @@
     justify-content: space-between;
 
     .LogoEco01{
-        height: 65px;
-        margin-left: 142px;
+        max-height:65px;
+        margin-left: 10%;
         
     }
 
 
     .navbar{
         width: 50%;
-        margin-right: 145px;
+        margin-right: 10%;
         font-family: 'Poppins', sans-serif;
         font-size: 18px;
         font-weight: 700;
         color: #ffffff;
         text-align: end;
         
-        
-        ul{
-            width: 100%;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;
-        }
 
-       
+
+            ul{
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+
+               
+            }
+
+            
         
     }
 
@@ -52,117 +69,236 @@
 }
 
 #hero{
+    
     width: 100%;
- 
-  
+    height: 1350px;
+    
+    
     position: relative;
     top: -200px;
     left: 0;
-  
-   
+    background-image: url(/Multimedia/png/FondoHero02.png);
+    background-repeat: no-repeat;
+    
 
+    display: flex;
+    flex-direction: row;
+
+  
+
+  
+   /*
     #fondoHero{
+
         width: 100%;
+        height: 100%;
+        
+        border: solid 1px rgb(0, 255, 128);
+        //z-index: -1;
+        top: -200px;
         
 
-        svg{
 
+       svg{
+            
+            min-width: 100%;
+            
             
           
-            width: 100%;
-            border: solid 1px rgb(34, 0, 255);
         }
+        
 
 
 
     }
+   */
 
     .textoHero{
 
-        position: absolute;
-        top: 40%;
-        left:10% ;
-       
-        width:35% ;
+        display: flex;
+        flex-direction: column;
         
 
-        p{
-            font-family: 'Poppins', sans-serif;
-            font-size: 55px;
-            font-weight: 600;
-            color: #ffffff;
-            height: 70px;
+        position: absolute;
+        top: 30%;
+        left:10% ;
+    
+        width:35% ;
+       
+
+    
+            p{
+                font-family: 'Poppins', sans-serif;
+                font-size: 55px;
+                font-weight: 600;
+                color: #ffffff;
+
+                margin-bottom: 0;
+                
+                
+                
+
+                @include media-up (md){
+
+                    text-align: center;
+                    font-size: 30px;
+
+                }
+
+                @include media-up (sm){
+
+                    text-align: center;
+                    font-size: 30px;
+
+                }
+            }
+
+            h1{
+                font-family: littleQueen;
+                font-size: 70px;
+                color: #ffffff;
+
+                margin-bottom: 0;
+                
+
+                @include media-up (md){
+
+                    text-align: center;
+                    font-size: 30px;
+
+                    margin-bottom: 20px;
+
+                }
+
+                @include media-up (sm){
+
+                    text-align: center;
+                    font-size: 30px;
+
+                    margin-bottom: 20px;
+
+                }
+            }
+
+            h3{
+                width: 100%;
+
+                font-family: 'Poppins', sans-serif;
+                font-size: 25px;
+                font-weight: 300;
+                color: #ffffff;
+
+               
+
+                @include media-up (md){
+
+                    text-align: center;
+                    font-size: 14px;
+                    
+
+                }
+
+                @include media-up (sm){
+
+                    text-align: center;
+                    font-size: 14px;
+
+                }
         }
 
-        h1{
-            font-family: littleQueen;
-            font-size: 70px;
-            color: #ffffff;
+        @include media-up (md){
+            left: 0%;
+            top: 20%;
+            width: 100%;
+            
+            
         }
 
-        h3{
-            width: 90%;
-            font-family: 'Poppins', sans-serif;
-            font-size: 25px;
-            font-weight: 300;
-            color: #ffffff;
-       }
+        @include media-up (sm){
+            left: 0%;
+            top: 20%;
+            width: 100%;
+            
+        }
+
+        
 
     }
 
     .imgHero{
 
-        display: flex;
-        flex-direction: row;
-        
-        
+       
         width: 50%;
         height: 50%;
         
-       
 
         position: absolute;
-        top: 200px;
-        right: 0;
-        
-        
+        top: 20%;
+        left: 50%;
 
+        display: flex;
+
+        justify-content: center;
+
+        @include media-up (md){
+            left: 0%;
+            top: 30%;
+            width: 100%;
+            
+        }
+
+        @include media-up (sm){
+            left: 0%;
+            top: 30%;
+            width: 100%;
+            border: solid 1px rgb(255, 0, 221);
+        }
+
+        img{
+
+          
+
+        }
+
+        /*
+        
             .rectangulo01{
-               
-                
+            
+                width: 60%;
+                height: 60%;
+
                 position: absolute;
-                left: 10%;
+                left: 30%;
                 top: 5%;
-                width: 80%;
-               
+                
+            
                 svg{
-                    height:500px;
+                 
                 }
             }
-
             .rectangulo02{
-               
+            
                 height: 20%;
                 position: absolute;
                 top: 250px;
                 left: 10%;
-               
-               
+            
+            
                 svg{
-                    height:500px;
+                //max-height:500px;
                 }
             }
-        
-
             .img01{
-               
+            
                 position: absolute;
                 left: 10%;
                 top:40px;
                 z-index: 1;
 
                 img{
-                    height: 800px;
+                
+                height: 800px;
+                width: 100%;
                 }
 
             }
@@ -171,15 +307,23 @@
                 position: absolute;
                 left: 28%;
                 top: 0px;
-               
+            
                 
                 img{
-                    height: 800px;
+                    max-height: 800px;
+                max-width: 100%;
                 }
 
             }
+        */
+        
+
+    
+    
 
     }
+
+   
 
 
 }
@@ -190,8 +334,11 @@
     justify-content: center;
     align-items: center;
 
-    height: 850px;
-    padding-top: 100px;
+    
+   
+    border: solid 1px red;
+
+   
 
 
     h3{
@@ -216,9 +363,12 @@
             flex-direction: column;
             align-items: center;
 
+            margin-top: 150px;
+
+
             img{
                 height: 440px;
-                margin-bottom: 15px;
+                margin-bottom: 50px;
             }
             p{
                 font-family: 'Poppins', sans-serif;
@@ -241,7 +391,51 @@
                 font-weight: 400;
                 text-decoration: none;
                 color: black;
+
+                @include media-up (md){
+                    
+                    width: 80%;
+                    
+                    
+                }
+            
+                @include media-up (sm){
+
+                    width: 80%;
+                    
+                    
+                }
             }
+
+            @include media-up (md){
+                width: 100%; 
+            }
+        
+            @include media-up (sm){
+  
+                width: 100%;
+                
+            }
+        }
+
+        @include media-up (md){
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            width: 100%;
+           
+            
+            
+        }
+    
+        @include media-up (sm){
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            width: 100%;
+            
         }
     }
 
@@ -281,8 +475,20 @@
     flex-direction: row;
     justify-content: center;
    
-    
+    margin-top: 50px;
     padding-top: 100px;
+
+    @include media-up (md){
+
+        flex-direction: column;
+        
+        
+    }
+
+    @include media-up (sm){
+      
+        flex-direction: column;
+    }
     
     
 
@@ -295,6 +501,22 @@
         display: flex;
         flex-direction: row;
         align-items: flex-end;
+
+        
+        @include media-up (md){
+
+            flex-direction: column;
+            align-items: center;
+            margin-top: 150px;
+            
+        }
+    
+        @include media-up (sm){
+          
+            flex-direction: column;
+            align-items: center;
+            margin-top: 150px;
+        }
        
 
         .imgCard02{
@@ -306,6 +528,20 @@
             height: 90px;
             margin-left: 50px;
            
+            @include media-up (md){
+
+                margin-left: 0px;
+
+                
+                
+            }
+        
+            @include media-up (sm){
+
+                margin-left: 0px;
+              
+                
+            }
             
            
 
@@ -314,6 +550,21 @@
                 font-family: 'Poppins', sans-serif;
                 font-size: 25px;
                 font-weight: 600;
+
+                @include media-up (md){
+
+                    text-align: center;
+                    margin-top: 20px;
+ 
+                }
+            
+                @include media-up (sm){
+    
+                    text-align: center;
+                    margin-top: 20px;
+
+                    
+                }
            
 
             }
@@ -322,10 +573,26 @@
                 font-family: 'Poppins', sans-serif;
                 font-size: 25px;
                 font-weight: 300;
+
+                @include media-up (md){
+                   
+
+                    text-align: center;
+ 
+                }
+            
+                @include media-up (sm){
+    
+                    text-align: center;
+
+                    
+                }
                 
             }
 
         }
+
+
 
        
 
@@ -341,6 +608,8 @@
     margin-bottom: 50px;
     margin-top: 100px;
 
+    
+
     h3{
         font-family: littleQueen;
         font-size: 47px;
@@ -355,11 +624,45 @@
         justify-content: space-around;
 
         margin-top: 60px;
+
+        
+        @include media-up (md){
+
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+           
+
+        }
+    
+        @include media-up (sm){
+
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            
+        }
         
         
 
         .card03{
             width: 20%;
+
+            @include media-up (md){
+
+                width: 80%;
+                margin-top: 100px;
+
+
+            }
+        
+            @include media-up (sm){
+
+                width: 80%;
+                margin-top: 100px;
+
+            }
 
 
 
@@ -375,6 +678,20 @@
                 font-size: 18px;
                 font-weight: 300;
                 text-align: left;
+
+                @include media-up (md){
+
+                  text-align: center;
+    
+    
+                }
+            
+                @include media-up (sm){
+    
+                    text-align: center;
+                    
+    
+                }
             }
 
            
@@ -560,7 +877,6 @@
 
 #contacto{
     
-   
     .fondo{
            
         height: 1500px;
@@ -680,11 +996,6 @@
        
        
     }
-
-   
-
-
-  
 
 }
 
