@@ -689,7 +689,7 @@ $medidaspantallas: (
                 @include media-up (sm){
     
                     text-align: center;
-                    
+
     
                 }
             }
@@ -851,23 +851,84 @@ $medidaspantallas: (
         flex-direction: row;
         width: 40%;
         margin-bottom: 150px;
+
+        @include media-up (md){
+
+            flex-direction: column;
+            width: 80%;
+            
+            align-items: center;
+
+        }
+    
+        @include media-up (sm){
+
+            flex-direction: column;
+            width: 80%;
+
+            align-items: center;
+   
+        }
         
 
         .icono{
             width: 30%;
+           
+            display: flex;
+            justify-content: center;
+           
+
+           
           
         }
 
         .texto{
+
+
+            @include media-up (md){
+                width: 100%;
+
+            }
+        
+            @include media-up (sm){
+                width: 100%;
+ 
+            }
+
+
             h6{
                 font-family: 'Poppins', sans-serif;
                 font-size: 30px;
                 font-weight: 600;
+                
+
+                @include media-up (md){
+                    text-align: center;
+                     margin-top: 50px;
+
+                }
+            
+                @include media-up (sm){
+                    text-align: center;
+                    margin-top: 50px;
+     
+                }
             }
             p{
                 font-family: 'Poppins', sans-serif;
                 font-size: 25px;
                 font-weight: 400;
+
+                @include media-up (md){
+                   align-items: flex-start;
+
+                }
+            
+                @include media-up (sm){
+                    align-items: flex-start;
+
+     
+                }
 
             }
         }

@@ -585,18 +585,66 @@
   width: 40%;
   margin-bottom: 150px;
 }
+@media screen and (max-width: 983px) {
+  #envios .card04 {
+    flex-direction: column;
+    width: 80%;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 540px) {
+  #envios .card04 {
+    flex-direction: column;
+    width: 80%;
+    align-items: center;
+  }
+}
 #envios .card04 .icono {
   width: 30%;
+  display: flex;
+  justify-content: center;
+}
+@media screen and (max-width: 983px) {
+  #envios .card04 .texto {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 540px) {
+  #envios .card04 .texto {
+    width: 100%;
+  }
 }
 #envios .card04 .texto h6 {
   font-family: "Poppins", sans-serif;
   font-size: 30px;
   font-weight: 600;
 }
+@media screen and (max-width: 983px) {
+  #envios .card04 .texto h6 {
+    text-align: center;
+    margin-top: 50px;
+  }
+}
+@media screen and (max-width: 540px) {
+  #envios .card04 .texto h6 {
+    text-align: center;
+    margin-top: 50px;
+  }
+}
 #envios .card04 .texto p {
   font-family: "Poppins", sans-serif;
   font-size: 25px;
   font-weight: 400;
+}
+@media screen and (max-width: 983px) {
+  #envios .card04 .texto p {
+    align-items: flex-start;
+  }
+}
+@media screen and (max-width: 540px) {
+  #envios .card04 .texto p {
+    align-items: flex-start;
+  }
 }
 
 #contacto .fondo {
