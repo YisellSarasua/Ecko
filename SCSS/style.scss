@@ -71,7 +71,7 @@ $medidaspantallas: (
 #hero{
     
     width: 100%;
-    height: 2000px;
+    height: 1500px;
     
     
     background-image: url(/Multimedia/png/FondoHero02.png);
@@ -81,6 +81,17 @@ $medidaspantallas: (
 
     display: flex;
     flex-direction: row;
+
+    @include media-up (md){
+        height: 1000px;
+        
+        
+    }
+
+    @include media-up (sm){
+        height: 1000px;
+        
+    }
 
   
 
@@ -240,7 +251,7 @@ $medidaspantallas: (
 
         @include media-up (md){
             left: 0%;
-            top: 30%;
+            top: 50%;
             width: 100%;
             
         }
@@ -937,7 +948,7 @@ $medidaspantallas: (
     
     .fondo{
            
-        height: 1500px;
+        height: 1000px;
         width: 100%;
        // position: relative;
        // bottom:0px;
@@ -960,6 +971,21 @@ $medidaspantallas: (
             //top: 10%;
             display: flex;
             flex-direction: row;
+
+
+            @include media-up (md){
+
+                flex-direction: column-reverse;
+                align-items: center;
+                border: solid 1px yellow;
+                
+            }
+        
+            @include media-up (sm){
+
+                flex-direction: column-reverse;
+                align-items: center;
+            }
          
             
     
@@ -970,21 +996,47 @@ $medidaspantallas: (
                 align-items: center;
                 justify-content: center;
 
+           
+         
+
                
               
                 img{
-                    
+         
+                    @include media-up (md){
+
+                       margin-top: 200px;
+                    }
+                
+                    @include media-up (sm){
+
+                        
+                    }
                 }
             }
     
             .formulario{
                 width: 50%;
-               
 
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
+
+                @include media-up (md){
+
+                    width: 90%;
+                 }
+             
+                 @include media-up (sm){
+
+                    width: 90%;
+
+                 }
+
+                
+
+
     
                 h3{
           
@@ -994,6 +1046,18 @@ $medidaspantallas: (
                     
                     position: absolute;
                     top: 20px;
+
+                    @include media-up (md){
+
+                       
+                     }
+                 
+                     @include media-up (sm){
+    
+                       
+    
+                     }
+
                 
                 }
                 
@@ -1063,7 +1127,7 @@ $medidaspantallas: (
 }
 
 #puntosDeVenta{
-    height: 900px;
+    height: 561px;
     background-color: #373435;
    
     z-index: 1;
@@ -1076,6 +1140,19 @@ $medidaspantallas: (
     font-weight: 400;
     color: #ffffff;
 
+    @include media-up (md){
+
+
+        
+    }
+
+    @include media-up (sm){
+
+        
+
+        
+    }
+
     h3{
         margin-left: 6%;
         padding-top: 100px;
@@ -1084,16 +1161,42 @@ $medidaspantallas: (
         font-size: 47px;
         font-weight: 600;
 
+        @include media-up (md){
+            padding-bottom: 50px;
+            padding-top: 50px;
+            margin-left: 0px;
+            text-align: center;
+        }
+    
+        @include media-up (sm){
+            padding-bottom: 50px;
+            padding-top: 50px;
+            margin-left: 0px;
+            text-align: center;
+        }
+
     }
 
 
 
     
-    div{
+    .puntosInfo{
         display: flex;
         width: 100%;
         flex-direction: row; 
         justify-content: space-around; 
+
+        @include media-up (md){
+            flex-direction: column; 
+            align-items: center;
+
+        }
+    
+        @include media-up (sm){
+            flex-direction: column; 
+            align-items: center;
+  
+        }
         
         
 
@@ -1107,12 +1210,36 @@ $medidaspantallas: (
             font-size: 16px;
             font-weight:300;
 
+            @include media-up (md){
+                font-size: 14px;
+                margin-bottom: 50px;
+    
+            }
+        
+            @include media-up (sm){
+                font-size: 14px;
+                margin-bottom: 50px;
+      
+            }
+
         }
 
         .redes{
-            width: 150px;
+            width: 10%;
             display: flex;
             flex-direction: column;
+
+            @include media-up (md){
+                width: 60%;
+                align-items: center;
+    
+            }
+        
+            @include media-up (sm){
+                width: 60%;
+                align-items: center;
+      
+            }
            
 
             p{
@@ -1120,6 +1247,7 @@ $medidaspantallas: (
                 font-size: 16px;
                 font-weight:400;
                 text-align: right;
+
             }
 
             div{

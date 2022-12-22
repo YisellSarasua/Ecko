@@ -33,7 +33,7 @@
 
 #hero {
   width: 100%;
-  height: 2000px;
+  height: 1500px;
   background-image: url(/Multimedia/png/FondoHero02.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -64,6 +64,16 @@
 
    }
   */
+}
+@media screen and (max-width: 983px) {
+  #hero {
+    height: 1000px;
+  }
+}
+@media screen and (max-width: 540px) {
+  #hero {
+    height: 1000px;
+  }
 }
 #hero .textoHero {
   display: flex;
@@ -213,7 +223,7 @@
 @media screen and (max-width: 983px) {
   #hero .imgHero {
     left: 0%;
-    top: 30%;
+    top: 50%;
     width: 100%;
   }
 }
@@ -646,7 +656,7 @@
 }
 
 #contacto .fondo {
-  height: 1500px;
+  height: 1000px;
   width: 100%;
   background-image: url(/Multimedia/png/FondoContacto02.png);
   background-repeat: no-repeat;
@@ -658,11 +668,29 @@
   display: flex;
   flex-direction: row;
 }
+@media screen and (max-width: 983px) {
+  #contacto .fondo .form {
+    flex-direction: column-reverse;
+    align-items: center;
+    border: solid 1px yellow;
+  }
+}
+@media screen and (max-width: 540px) {
+  #contacto .fondo .form {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+}
 #contacto .fondo .form .logoContacto {
   width: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+@media screen and (max-width: 983px) {
+  #contacto .fondo .form .logoContacto img {
+    margin-top: 200px;
+  }
 }
 #contacto .fondo .form .formulario {
   width: 50%;
@@ -670,6 +698,16 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+@media screen and (max-width: 983px) {
+  #contacto .fondo .form .formulario {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 540px) {
+  #contacto .fondo .form .formulario {
+    width: 90%;
+  }
 }
 #contacto .fondo .form .formulario h3 {
   font-family: littleQueen;
@@ -714,7 +752,7 @@
 }
 
 #puntosDeVenta {
-  height: 900px;
+  height: 561px;
   background-color: #373435;
   z-index: 1;
   display: flex;
@@ -732,13 +770,41 @@
   font-size: 47px;
   font-weight: 600;
 }
-#puntosDeVenta div {
+@media screen and (max-width: 983px) {
+  #puntosDeVenta h3 {
+    padding-bottom: 50px;
+    padding-top: 50px;
+    margin-left: 0px;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 540px) {
+  #puntosDeVenta h3 {
+    padding-bottom: 50px;
+    padding-top: 50px;
+    margin-left: 0px;
+    text-align: center;
+  }
+}
+#puntosDeVenta .puntosInfo {
   display: flex;
   width: 100%;
   flex-direction: row;
   justify-content: space-around;
 }
-#puntosDeVenta div .direccion {
+@media screen and (max-width: 983px) {
+  #puntosDeVenta .puntosInfo {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 540px) {
+  #puntosDeVenta .puntosInfo {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+#puntosDeVenta .puntosInfo .direccion {
   width: 220px;
   display: flex;
   flex-direction: column;
@@ -746,21 +812,45 @@
   font-size: 16px;
   font-weight: 300;
 }
-#puntosDeVenta div .redes {
-  width: 150px;
+@media screen and (max-width: 983px) {
+  #puntosDeVenta .puntosInfo .direccion {
+    font-size: 14px;
+    margin-bottom: 50px;
+  }
+}
+@media screen and (max-width: 540px) {
+  #puntosDeVenta .puntosInfo .direccion {
+    font-size: 14px;
+    margin-bottom: 50px;
+  }
+}
+#puntosDeVenta .puntosInfo .redes {
+  width: 10%;
   display: flex;
   flex-direction: column;
 }
-#puntosDeVenta div .redes p {
+@media screen and (max-width: 983px) {
+  #puntosDeVenta .puntosInfo .redes {
+    width: 60%;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 540px) {
+  #puntosDeVenta .puntosInfo .redes {
+    width: 60%;
+    align-items: center;
+  }
+}
+#puntosDeVenta .puntosInfo .redes p {
   font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-weight: 400;
   text-align: right;
 }
-#puntosDeVenta div .redes div {
+#puntosDeVenta .puntosInfo .redes div {
   justify-content: center;
 }
-#puntosDeVenta div .redes div a {
+#puntosDeVenta .puntosInfo .redes div a {
   margin: 5px;
 }
 
