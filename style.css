@@ -745,7 +745,6 @@
 }
 
 #puntosDeVenta {
-  height: 561px;
   background-color: #373435;
   z-index: 1;
   display: flex;
@@ -754,6 +753,33 @@
   font-size: 25px;
   font-weight: 400;
   color: #ffffff;
+}
+@media screen and (max-width: 983px) {
+  #puntosDeVenta {
+    align-items: center;
+  }
+}
+@media screen and (max-width: 540px) {
+  #puntosDeVenta {
+    align-items: center;
+  }
+}
+#puntosDeVenta .logo02 {
+  display: none;
+}
+@media screen and (max-width: 983px) {
+  #puntosDeVenta .logo02 {
+    display: flex;
+    flex-direction: column;
+    height: 59px;
+    margin: 50px;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 540px) {
+  #puntosDeVenta .logo02 {
+    display: flex;
+  }
 }
 #puntosDeVenta h3 {
   margin-left: 6%;
@@ -766,17 +792,19 @@
 @media screen and (max-width: 983px) {
   #puntosDeVenta h3 {
     padding-bottom: 50px;
-    padding-top: 50px;
+    padding-top: 0px;
     margin-left: 0px;
     text-align: center;
+    font-size: 25px;
   }
 }
 @media screen and (max-width: 540px) {
   #puntosDeVenta h3 {
     padding-bottom: 50px;
-    padding-top: 50px;
+    padding-top: 0px;
     margin-left: 0px;
     text-align: center;
+    font-size: 25px;
   }
 }
 #puntosDeVenta .puntosInfo {

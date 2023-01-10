@@ -1049,7 +1049,7 @@ $medidaspantallas: (
 }
 
 #puntosDeVenta{
-    height: 561px;
+    
     background-color: #373435;
    
     z-index: 1;
@@ -1063,12 +1063,36 @@ $medidaspantallas: (
     color: #ffffff;
 
     @include media-up (md){
-      
+        align-items: center;
     }
 
     @include media-up (sm){
 
+        align-items: center;
         
+    }
+
+    .logo02{
+        display: none;
+
+        @include media-up (md){
+            display: flex;
+            flex-direction: column;
+            
+            height: 59px;
+            margin: 50px;
+            
+            align-items: center;
+      
+        }
+    
+        @include media-up (sm){
+            display: flex;
+    
+            
+        }
+
+
     }
 
     h3{
@@ -1081,21 +1105,21 @@ $medidaspantallas: (
 
         @include media-up (md){
             padding-bottom: 50px;
-            padding-top: 50px;
+            padding-top: 0px;
             margin-left: 0px;
             text-align: center;
+            font-size: 25px;
         }
     
         @include media-up (sm){
             padding-bottom: 50px;
-            padding-top: 50px;
+            padding-top: 0px;
             margin-left: 0px;
             text-align: center;
+            font-size: 25px;
         }
 
     }
-
-
 
     
     .puntosInfo{
