@@ -20,8 +20,6 @@ $medidaspantallas: (
 
 
 #Navbar{
-    
-   
 
     position: relative;
     z-index: 1;
@@ -36,7 +34,7 @@ $medidaspantallas: (
     .LogoEco01{
         max-height:65px;
         margin-left: 10%;
-        
+  
     }
 
 
@@ -57,7 +55,6 @@ $medidaspantallas: (
                 flex-direction: row;
                 justify-content: space-around;
 
-               
             }
 
             
@@ -84,43 +81,13 @@ $medidaspantallas: (
 
     @include media-up (md){
         height: 1000px;
-        
-        
+ 
     }
 
     @include media-up (sm){
         height: 1000px;
         
     }
-
-  
-
-  
-   /*
-    #fondoHero{
-
-        width: 100%;
-        height: 100%;
-        
-        border: solid 1px rgb(0, 255, 128);
-        //z-index: -1;
-        top: -200px;
-        
-
-
-       svg{
-            
-            min-width: 100%;
-            
-            
-          
-        }
-        
-
-
-
-    }
-   */
 
     .textoHero{
 
@@ -143,9 +110,6 @@ $medidaspantallas: (
                 color: #ffffff;
 
                 margin-bottom: 0;
-                
-                
-                
 
                 @include media-up (md){
 
@@ -343,12 +307,6 @@ $medidaspantallas: (
     justify-content: center;
     align-items: center;
 
-    
-   
-    
-
-   
-
 
     h3{
         font-family: littleQueen;
@@ -361,7 +319,6 @@ $medidaspantallas: (
         flex-direction: row;
         width: 100%;
         justify-content: space-around;
-
 
         .cardProductos{
             
@@ -433,9 +390,7 @@ $medidaspantallas: (
             align-items: center;
 
             width: 100%;
-           
-            
-            
+ 
         }
     
         @include media-up (sm){
@@ -471,8 +426,7 @@ $medidaspantallas: (
         font-size: 20px;
         font-weight: 300;
         text-align: center;
-            
-            
+      
     }
 
 }
@@ -490,8 +444,7 @@ $medidaspantallas: (
     @include media-up (md){
 
         flex-direction: column;
-        
-        
+  
     }
 
     @include media-up (sm){
@@ -499,8 +452,6 @@ $medidaspantallas: (
         flex-direction: column;
     }
     
-    
-
 
     .card02{
         
@@ -617,15 +568,12 @@ $medidaspantallas: (
     margin-bottom: 50px;
     margin-top: 100px;
 
-    
 
     h3{
         font-family: littleQueen;
         font-size: 47px;
         font-weight: 600;
     }
-
-    
 
     .valores{
         display: flex;
@@ -720,19 +668,14 @@ $medidaspantallas: (
     margin-bottom: 50px;
     margin-top: 100px;
 
-   
 
+        h3{
 
-    h3{
-
-        font-family: littleQueen;
-        font-size: 47px;
-        font-weight: 600;
-        margin-bottom: 100px;
-    }
-
-    
-
+            font-family: littleQueen;
+            font-size: 47px;
+            font-weight: 600;
+            margin-bottom: 100px;
+        }
         .originales{
             width: 100%;
             display: flex;
@@ -833,12 +776,6 @@ $medidaspantallas: (
 
         }
 
-
-      
-
-    
-    
-   
 }
 
 #envios{
@@ -950,10 +887,6 @@ $medidaspantallas: (
            
         height: 1000px;
         width: 100%;
-       // position: relative;
-       // bottom:0px;
-        //left: 0px;
-        //z-index: -1;
 
         background-image: url(/Multimedia/png/FondoContacto02.png);
         background-repeat: no-repeat;
@@ -961,24 +894,16 @@ $medidaspantallas: (
 
         .form{
 
-    
             width: 100%;
             height: 1000px;
-           
-           
-            
-           // position: absolute;
-            //top: 10%;
             display: flex;
             flex-direction: row;
-
 
             @include media-up (md){
 
                 flex-direction: column-reverse;
                 align-items: center;
-                border: solid 1px yellow;
-                
+            
             }
         
             @include media-up (sm){
@@ -987,32 +912,29 @@ $medidaspantallas: (
                 align-items: center;
             }
          
-            
-    
+
             .logoContacto{
                 width: 50%;
                 
                 display: flex;
                 align-items: center;
                 justify-content: center;
-
-           
-         
-
-               
               
                 img{
          
-                    @include media-up (md){
-
-                       margin-top: 200px;
-                    }
-                
-                    @include media-up (sm){
-
-                        
-                    }
+                  
                 }
+
+
+                @include media-up (md){
+
+                    display: none;
+                  }
+              
+                  @include media-up (sm){
+
+                    display: none;
+                  }
             }
     
             .formulario{
@@ -1026,35 +948,35 @@ $medidaspantallas: (
                 @include media-up (md){
 
                     width: 90%;
+                    padding-bottom: 100px;
                  }
              
                  @include media-up (sm){
 
                     width: 90%;
+                    padding-bottom: 100px;
 
                  }
 
-                
-
-
-    
                 h3{
           
                     font-family: littleQueen;
                     font-size: 47px;
                     font-weight: 600;
-                    
-                    position: absolute;
                     top: 20px;
+                    color: #373435;
 
                     @include media-up (md){
+                        font-size: 31px;
+                        color: #ffffff;
 
                        
                      }
                  
                      @include media-up (sm){
-    
-                       
+
+                        font-size: 31px;
+                        color:  #FFFFFF;
     
                      }
 
@@ -1141,14 +1063,10 @@ $medidaspantallas: (
     color: #ffffff;
 
     @include media-up (md){
-
-
-        
+      
     }
 
     @include media-up (sm){
-
-        
 
         
     }

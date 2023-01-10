@@ -39,31 +39,6 @@
   background-size: cover;
   display: flex;
   flex-direction: row;
-  /*
-   #fondoHero{
-
-       width: 100%;
-       height: 100%;
-
-       border: solid 1px rgb(0, 255, 128);
-       //z-index: -1;
-       top: -200px;
-
-
-
-      svg{
-
-           min-width: 100%;
-
-
-
-       }
-
-
-
-
-   }
-  */
 }
 @media screen and (max-width: 983px) {
   #hero {
@@ -672,7 +647,6 @@
   #contacto .fondo .form {
     flex-direction: column-reverse;
     align-items: center;
-    border: solid 1px yellow;
   }
 }
 @media screen and (max-width: 540px) {
@@ -688,8 +662,13 @@
   justify-content: center;
 }
 @media screen and (max-width: 983px) {
-  #contacto .fondo .form .logoContacto img {
-    margin-top: 200px;
+  #contacto .fondo .form .logoContacto {
+    display: none;
+  }
+}
+@media screen and (max-width: 540px) {
+  #contacto .fondo .form .logoContacto {
+    display: none;
   }
 }
 #contacto .fondo .form .formulario {
@@ -702,19 +681,33 @@
 @media screen and (max-width: 983px) {
   #contacto .fondo .form .formulario {
     width: 90%;
+    padding-bottom: 100px;
   }
 }
 @media screen and (max-width: 540px) {
   #contacto .fondo .form .formulario {
     width: 90%;
+    padding-bottom: 100px;
   }
 }
 #contacto .fondo .form .formulario h3 {
   font-family: littleQueen;
   font-size: 47px;
   font-weight: 600;
-  position: absolute;
   top: 20px;
+  color: #373435;
+}
+@media screen and (max-width: 983px) {
+  #contacto .fondo .form .formulario h3 {
+    font-size: 31px;
+    color: #ffffff;
+  }
+}
+@media screen and (max-width: 540px) {
+  #contacto .fondo .form .formulario h3 {
+    font-size: 31px;
+    color: #FFFFFF;
+  }
 }
 #contacto .fondo .form .formulario .mb-3 {
   width: 50%;
