@@ -616,7 +616,6 @@
   margin-right: 20px;
   display: flex;
   justify-content: left;
-  border: solid 1px yellow;
 }
 @media screen and (max-width: 983px) {
   #envios .card04 .texto {
