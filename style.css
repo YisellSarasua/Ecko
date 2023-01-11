@@ -167,12 +167,12 @@
 }
 @media screen and (max-width: 983px) {
   #hero .imgHero img {
-    width: 50%;
+    width: 70%;
   }
 }
 @media screen and (max-width: 540px) {
   #hero .imgHero img {
-    width: 50%;
+    width: 70%;
   }
 }
 
@@ -220,6 +220,16 @@
   font-family: "Poppins", sans-serif;
   font-size: 25px;
   font-weight: 700;
+}
+@media screen and (max-width: 983px) {
+  #productos .productosCard .cardProductos p {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 540px) {
+  #productos .productosCard .cardProductos p {
+    font-size: 20px;
+  }
 }
 #productos .productosCard .cardProductos a {
   display: flex;
@@ -377,13 +387,13 @@
 @media screen and (max-width: 983px) {
   #medidas .card02 .textoCard02 .tGrande {
     text-align: center;
-    margin-top: 20px;
+    margin-top: 15px;
   }
 }
 @media screen and (max-width: 540px) {
   #medidas .card02 .textoCard02 .tGrande {
     text-align: center;
-    margin-top: 20px;
+    margin-top: 15px;
   }
 }
 #medidas .card02 .textoCard02 p {
@@ -395,11 +405,13 @@
 @media screen and (max-width: 983px) {
   #medidas .card02 .textoCard02 p {
     text-align: center;
+    margin-top: 15px;
   }
 }
 @media screen and (max-width: 540px) {
   #medidas .card02 .textoCard02 p {
     text-align: center;
+    margin-top: 15px;
   }
 }
 
@@ -466,6 +478,16 @@
   font-size: 32px;
   font-weight: 500;
   text-align: center;
+}
+@media screen and (max-width: 983px) {
+  #quienesSomos .valores .card03 h4 {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 540px) {
+  #quienesSomos .valores .card03 h4 {
+    font-size: 20px;
+  }
 }
 #quienesSomos .valores .card03 p {
   font-family: "Poppins", sans-serif;
@@ -983,14 +1005,12 @@
   #puntosDeVenta .puntosInfo .redes {
     width: 60%;
     align-items: center;
-    width: 40%;
   }
 }
 @media screen and (max-width: 540px) {
   #puntosDeVenta .puntosInfo .redes {
     width: 60%;
     align-items: center;
-    width: 40%;
   }
 }
 #puntosDeVenta .puntosInfo .redes p {
@@ -1002,11 +1022,13 @@
 @media screen and (max-width: 983px) {
   #puntosDeVenta .puntosInfo .redes p {
     text-align: center;
+    font-size: 14px;
   }
 }
 @media screen and (max-width: 540px) {
   #puntosDeVenta .puntosInfo .redes p {
     text-align: center;
+    font-size: 14px;
   }
 }
 #puntosDeVenta .puntosInfo .redes div {

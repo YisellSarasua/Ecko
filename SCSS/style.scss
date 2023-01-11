@@ -213,14 +213,11 @@ $medidaspantallas: (
        
         width: 50%;
         
-        
-
         position: absolute;
         top: 20%;
         left: 50%;
 
         display: flex;
-
         justify-content: center;
         
 
@@ -244,13 +241,13 @@ $medidaspantallas: (
 
             @include media-up (md){
 
-                width:50%;
+                width:70%;
            
             }
 
             @include media-up (sm){
 
-                width:50%;
+                width:70%;
             
             }
           
@@ -316,6 +313,16 @@ $medidaspantallas: (
                 font-family: 'Poppins', sans-serif;
                 font-size: 25px;
                 font-weight: 700;
+
+                @include media-up (md){
+                    font-size: 20px;
+             
+                }
+            
+                @include media-up (sm){
+                    font-size: 20px;
+                    
+                }
             }
 
             a{
@@ -511,14 +518,14 @@ $medidaspantallas: (
                 @include media-up (md){
 
                     text-align: center;
-                    margin-top: 20px;
+                    margin-top: 15px;
  
                 }
             
                 @include media-up (sm){
     
                     text-align: center;
-                    margin-top: 20px;
+                    margin-top: 15px;
 
                     
                 }
@@ -535,12 +542,14 @@ $medidaspantallas: (
                    
 
                     text-align: center;
+                    margin-top: 15px;
  
                 }
             
                 @include media-up (sm){
     
                     text-align: center;
+                    margin-top: 15px;
 
                     
                 }
@@ -636,6 +645,18 @@ $medidaspantallas: (
                 font-size: 32px;
                 font-weight: 500;
                 text-align: center;
+
+                @include media-up (md){
+
+                    font-size: 20px;
+  
+                  }
+              
+                  @include media-up (sm){
+      
+                      font-size: 20px;
+                  }
+
             }
             p{
                 font-family: 'Poppins', sans-serif;
@@ -647,16 +668,13 @@ $medidaspantallas: (
 
                   text-align: center;
                   font-size: 14px;
-    
-    
+
                 }
             
                 @include media-up (sm){
     
                     text-align: center;
                     font-size: 14px;
-
-    
                 }
             }
 
@@ -1334,14 +1352,14 @@ $medidaspantallas: (
             @include media-up (md){
                 width: 60%;
                 align-items: center;
-                width: 40%;
+                
     
             }
         
             @include media-up (sm){
                 width: 60%;
                 align-items: center;
-                width: 40%;
+              
       
             }
            
@@ -1354,12 +1372,14 @@ $medidaspantallas: (
 
                 @include media-up (md){
                     text-align: center;
+                    font-size: 14px;
                  
         
                 }
             
                 @include media-up (sm){
                     text-align: center;
+                    font-size: 14px;
                    
                 }
                 
