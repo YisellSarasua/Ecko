@@ -30,6 +30,16 @@
   flex-direction: row;
   justify-content: space-around;
 }
+@media screen and (max-width: 983px) {
+  #Navbar .navbar ul {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 540px) {
+  #Navbar .navbar ul {
+    flex-direction: column;
+  }
+}
 
 #hero {
   width: 100%;
@@ -176,7 +186,18 @@
 #productos h3 {
   font-family: littleQueen;
   font-size: 47px;
-  font-weight: 600;
+  font-weight: 500;
+  text-align: center;
+}
+@media screen and (max-width: 983px) {
+  #productos h3 {
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 540px) {
+  #productos h3 {
+    font-size: 25px;
+  }
 }
 #productos .productosCard {
   display: flex;
@@ -262,8 +283,19 @@
 #proceso h2 {
   font-family: littleQueen;
   font-size: 47px;
-  font-weight: 600;
+  font-weight: 500;
   margin-bottom: 50px;
+  text-align: center;
+}
+@media screen and (max-width: 983px) {
+  #proceso h2 {
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 540px) {
+  #proceso h2 {
+    font-size: 25px;
+  }
 }
 #proceso p {
   width: 80%;
@@ -271,6 +303,16 @@
   font-size: 20px;
   font-weight: 300;
   text-align: center;
+}
+@media screen and (max-width: 983px) {
+  #proceso p {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 540px) {
+  #proceso p {
+    font-size: 14px;
+  }
 }
 
 #medidas {
@@ -372,7 +414,17 @@
 #quienesSomos h3 {
   font-family: littleQueen;
   font-size: 47px;
-  font-weight: 600;
+  font-weight: 500;
+}
+@media screen and (max-width: 983px) {
+  #quienesSomos h3 {
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 540px) {
+  #quienesSomos h3 {
+    font-size: 25px;
+  }
 }
 #quienesSomos .valores {
   display: flex;
@@ -424,11 +476,13 @@
 @media screen and (max-width: 983px) {
   #quienesSomos .valores .card03 p {
     text-align: center;
+    font-size: 14px;
   }
 }
 @media screen and (max-width: 540px) {
   #quienesSomos .valores .card03 p {
     text-align: center;
+    font-size: 14px;
   }
 }
 
@@ -442,8 +496,18 @@
 #galeria h3 {
   font-family: littleQueen;
   font-size: 47px;
-  font-weight: 600;
+  font-weight: 500;
   margin-bottom: 100px;
+}
+@media screen and (max-width: 983px) {
+  #galeria h3 {
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 540px) {
+  #galeria h3 {
+    font-size: 25px;
+  }
 }
 #galeria .originales {
   width: 100%;
@@ -500,6 +564,16 @@
   font-family: "Poppins", sans-serif;
   font-size: 25px;
   font-weight: 500;
+}
+@media screen and (max-width: 983px) {
+  #galeria .customizables .tituloPersonajes p {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 540px) {
+  #galeria .customizables .tituloPersonajes p {
+    font-size: 20px;
+  }
 }
 #galeria .customizables .personajes {
   width: 100%;
@@ -587,8 +661,18 @@
 #envios h3 {
   font-family: littleQueen;
   font-size: 47px;
-  font-weight: 600;
+  font-weight: 500;
   margin-bottom: 100px;
+}
+@media screen and (max-width: 983px) {
+  #envios h3 {
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 540px) {
+  #envios h3 {
+    font-size: 25px;
+  }
 }
 #envios .card04 {
   display: flex;
@@ -652,11 +736,13 @@
 @media screen and (max-width: 983px) {
   #envios .card04 .texto p {
     align-items: flex-start;
+    font-size: 14px;
   }
 }
 @media screen and (max-width: 540px) {
   #envios .card04 .texto p {
     align-items: flex-start;
+    font-size: 14px;
   }
 }
 
@@ -723,24 +809,34 @@
 #contacto .fondo .form .formulario h3 {
   font-family: littleQueen;
   font-size: 47px;
-  font-weight: 600;
+  font-weight: 500;
   top: 20px;
   color: #373435;
 }
 @media screen and (max-width: 983px) {
   #contacto .fondo .form .formulario h3 {
-    font-size: 31px;
+    font-size: 25px;
     color: #ffffff;
   }
 }
 @media screen and (max-width: 540px) {
   #contacto .fondo .form .formulario h3 {
-    font-size: 31px;
+    font-size: 25px;
     color: #FFFFFF;
   }
 }
 #contacto .fondo .form .formulario .mb-3 {
   width: 50%;
+}
+@media screen and (max-width: 983px) {
+  #contacto .fondo .form .formulario .mb-3 {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 540px) {
+  #contacto .fondo .form .formulario .mb-3 {
+    width: 90%;
+  }
 }
 #contacto .fondo .form .formulario .mb-3 label {
   background-color: transparent;
@@ -817,7 +913,7 @@
   padding-bottom: 100px;
   font-family: littleQueen;
   font-size: 47px;
-  font-weight: 600;
+  font-weight: 500;
 }
 @media screen and (max-width: 983px) {
   #puntosDeVenta h3 {
@@ -867,12 +963,14 @@
   #puntosDeVenta .puntosInfo .direccion {
     font-size: 14px;
     margin-bottom: 50px;
+    width: 40%;
   }
 }
 @media screen and (max-width: 540px) {
   #puntosDeVenta .puntosInfo .direccion {
     font-size: 14px;
     margin-bottom: 50px;
+    width: 40%;
   }
 }
 #puntosDeVenta .puntosInfo .redes {
@@ -885,12 +983,14 @@
   #puntosDeVenta .puntosInfo .redes {
     width: 60%;
     align-items: center;
+    width: 40%;
   }
 }
 @media screen and (max-width: 540px) {
   #puntosDeVenta .puntosInfo .redes {
     width: 60%;
     align-items: center;
+    width: 40%;
   }
 }
 #puntosDeVenta .puntosInfo .redes p {
@@ -898,6 +998,16 @@
   font-size: 16px;
   font-weight: 400;
   text-align: right;
+}
+@media screen and (max-width: 983px) {
+  #puntosDeVenta .puntosInfo .redes p {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 540px) {
+  #puntosDeVenta .puntosInfo .redes p {
+    text-align: center;
+  }
 }
 #puntosDeVenta .puntosInfo .redes div {
   justify-content: center;
