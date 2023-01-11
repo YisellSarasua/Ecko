@@ -132,68 +132,11 @@
 }
 #hero .imgHero {
   width: 50%;
-  height: 50%;
   position: absolute;
   top: 20%;
   left: 50%;
   display: flex;
   justify-content: center;
-  /*
-
-      .rectangulo01{
-
-          width: 60%;
-          height: 60%;
-
-          position: absolute;
-          left: 30%;
-          top: 5%;
-
-
-          svg{
-
-          }
-      }
-      .rectangulo02{
-
-          height: 20%;
-          position: absolute;
-          top: 250px;
-          left: 10%;
-
-
-          svg{
-          //max-height:500px;
-          }
-      }
-      .img01{
-
-          position: absolute;
-          left: 10%;
-          top:40px;
-          z-index: 1;
-
-          img{
-
-          height: 800px;
-          width: 100%;
-          }
-
-      }
-      .img02{
-
-          position: absolute;
-          left: 28%;
-          top: 0px;
-
-
-          img{
-              max-height: 800px;
-          max-width: 100%;
-          }
-
-      }
-  */
 }
 @media screen and (max-width: 983px) {
   #hero .imgHero {
@@ -205,16 +148,30 @@
 @media screen and (max-width: 540px) {
   #hero .imgHero {
     left: 0%;
-    top: 30%;
+    top: 50%;
     width: 100%;
-    border: solid 1px rgb(255, 0, 221);
   }
 }
+#hero .imgHero img {
+  width: 70%;
+}
+@media screen and (max-width: 983px) {
+  #hero .imgHero img {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 540px) {
+  #hero .imgHero img {
+    width: 50%;
+  }
+}
+
 #productos {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 20px;
 }
 #productos h3 {
   font-family: littleQueen;
@@ -505,8 +462,32 @@
   display: flex;
   justify-content: space-around;
 }
+@media screen and (max-width: 983px) {
+  #galeria .originales .personajes {
+    display: none;
+  }
+}
+@media screen and (max-width: 540px) {
+  #galeria .originales .personajes {
+    display: none;
+  }
+}
 #galeria .originales .personajes img {
   width: 15%;
+}
+#galeria .originales .carrouselPersonajes {
+  width: 50%;
+  display: none;
+}
+@media screen and (max-width: 983px) {
+  #galeria .originales .carrouselPersonajes {
+    display: grid;
+  }
+}
+@media screen and (max-width: 540px) {
+  #galeria .originales .carrouselPersonajes {
+    display: grid;
+  }
 }
 #galeria .customizables {
   width: 100%;
@@ -528,6 +509,30 @@
 #galeria .customizables .personajes img {
   width: 15%;
 }
+@media screen and (max-width: 983px) {
+  #galeria .customizables .personajes {
+    display: none;
+  }
+}
+@media screen and (max-width: 540px) {
+  #galeria .customizables .personajes {
+    display: none;
+  }
+}
+#galeria .customizables .carrouselPersonajes {
+  width: 50%;
+  display: none;
+}
+@media screen and (max-width: 983px) {
+  #galeria .customizables .carrouselPersonajes {
+    display: grid;
+  }
+}
+@media screen and (max-width: 540px) {
+  #galeria .customizables .carrouselPersonajes {
+    display: grid;
+  }
+}
 #galeria .reciclables {
   width: 100%;
   display: flex;
@@ -547,6 +552,30 @@
 }
 #galeria .reciclables .personajes img {
   width: 15%;
+}
+@media screen and (max-width: 983px) {
+  #galeria .reciclables .personajes {
+    display: none;
+  }
+}
+@media screen and (max-width: 540px) {
+  #galeria .reciclables .personajes {
+    display: none;
+  }
+}
+#galeria .reciclables .carrouselPersonajes {
+  width: 50%;
+  display: none;
+}
+@media screen and (max-width: 983px) {
+  #galeria .reciclables .carrouselPersonajes {
+    display: grid;
+  }
+}
+@media screen and (max-width: 540px) {
+  #galeria .reciclables .carrouselPersonajes {
+    display: grid;
+  }
 }
 
 #envios {

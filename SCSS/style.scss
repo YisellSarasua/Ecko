@@ -202,7 +202,7 @@ $medidaspantallas: (
 
        
         width: 50%;
-        height: 50%;
+        
         
 
         position: absolute;
@@ -212,6 +212,7 @@ $medidaspantallas: (
         display: flex;
 
         justify-content: center;
+        
 
         @include media-up (md){
             left: 0%;
@@ -222,77 +223,30 @@ $medidaspantallas: (
 
         @include media-up (sm){
             left: 0%;
-            top: 30%;
+            top: 50%;
             width: 100%;
-            border: solid 1px rgb(255, 0, 221);
+            
         }
 
         img{
 
+          width:70%;
+
+            @include media-up (md){
+
+                width:50%;
+           
+            }
+
+            @include media-up (sm){
+
+                width:50%;
+            
+            }
           
 
         }
 
-        /*
-        
-            .rectangulo01{
-            
-                width: 60%;
-                height: 60%;
-
-                position: absolute;
-                left: 30%;
-                top: 5%;
-                
-            
-                svg{
-                 
-                }
-            }
-            .rectangulo02{
-            
-                height: 20%;
-                position: absolute;
-                top: 250px;
-                left: 10%;
-            
-            
-                svg{
-                //max-height:500px;
-                }
-            }
-            .img01{
-            
-                position: absolute;
-                left: 10%;
-                top:40px;
-                z-index: 1;
-
-                img{
-                
-                height: 800px;
-                width: 100%;
-                }
-
-            }
-            .img02{
-                
-                position: absolute;
-                left: 28%;
-                top: 0px;
-            
-                
-                img{
-                    max-height: 800px;
-                max-width: 100%;
-                }
-
-            }
-        */
-        
-
-    
-    
 
     }
 
@@ -306,6 +260,7 @@ $medidaspantallas: (
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 20px;
 
 
     h3{
@@ -700,6 +655,19 @@ $medidaspantallas: (
                 display: flex;
                 justify-content: space-around;
 
+                
+            @include media-up (md){
+
+                display: none;
+           
+            }
+
+            @include media-up (sm){
+
+                display: none;
+            
+            }
+
                 img{
                     width: 15%;
                     
@@ -707,6 +675,27 @@ $medidaspantallas: (
                 
 
             }
+
+            .carrouselPersonajes{
+
+                width: 50%;
+                display: none;
+             
+
+                @include media-up (md){
+
+                    display: grid;
+               
+                }
+    
+                @include media-up (sm){
+    
+                    display: grid;
+                
+                }
+
+            }
+
 
         }
         .customizables{
@@ -737,7 +726,40 @@ $medidaspantallas: (
                     width: 15%;
                     
                 }
+
+                @include media-up (md){
+
+                    display: none;
+               
+                }
+    
+                @include media-up (sm){
+    
+                    display: none;
                 
+                }
+                
+
+            }
+
+            
+            .carrouselPersonajes{
+
+                width: 50%;
+                display: none;
+             
+
+                @include media-up (md){
+
+                    display: grid;
+               
+                }
+    
+                @include media-up (sm){
+    
+                    display: grid;
+                
+                }
 
             }
 
@@ -771,6 +793,37 @@ $medidaspantallas: (
                     
                 }
                 
+                @include media-up (md){
+
+                    display: none;
+               
+                }
+    
+                @include media-up (sm){
+    
+                    display: none;
+                
+                }
+
+            }
+
+            .carrouselPersonajes{
+
+                width: 50%;
+                display: none;
+             
+
+                @include media-up (md){
+
+                    display: grid;
+               
+                }
+    
+                @include media-up (sm){
+    
+                    display: grid;
+                
+                }
 
             }
 
