@@ -871,11 +871,13 @@ $medidaspantallas: (
         
 
         .icono{
-            width: 30%;
+            width: 146px;
+            height: auto;
             margin-right: 20px;
            
             display: flex;
-            justify-content: center;
+            justify-content:left;
+            border: solid 1px yellow;
   
           
         }
@@ -1196,7 +1198,7 @@ $medidaspantallas: (
         
 
         .direccion{
-            width: 220px;
+            width: 15%;
             display: flex;
             flex-direction: column;
             
@@ -1220,9 +1222,10 @@ $medidaspantallas: (
         }
 
         .redes{
-            width: 10%;
+            width:15%;
             display: flex;
             flex-direction: column;
+            align-items: flex-end;
 
             @include media-up (md){
                 width: 60%;
@@ -1242,6 +1245,7 @@ $medidaspantallas: (
                 font-size: 16px;
                 font-weight:400;
                 text-align: right;
+                
 
             }
 
