@@ -29,6 +29,16 @@
   max-height: 65px;
   margin-left: 10%;
 }
+@media screen and (max-width: 983px) {
+  #Navbar .LogoEco01 img {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 540px) {
+  #Navbar .LogoEco01 img {
+    width: 80%;
+  }
+}
 #Navbar .navbar {
   width: 50%;
   margin-right: 10%;

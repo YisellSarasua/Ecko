@@ -53,6 +53,21 @@ $medidaspantallas: (
     .LogoEco01{
         max-height:65px;
         margin-left: 10%;
+
+       
+
+        img{
+
+            @include media-up (md){
+                width: 80%;
+            }
+        
+            @include media-up (sm){
+        
+                width: 80%;
+            }
+
+        }
   
     }
 
@@ -91,14 +106,13 @@ $medidaspantallas: (
                 @include media-up (md){
                     flex-direction: column;
                     
-                    
-                    
-                    
-                   
+    
                 }
             
                 @include media-up (sm){
                     flex-direction: column;
+                    
+    
                     
                 }
 
