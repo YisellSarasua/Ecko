@@ -105,12 +105,14 @@ $medidaspantallas: (
 
                 @include media-up (md){
                     flex-direction: column;
+                    background-color: #548084;
                     
     
                 }
             
                 @include media-up (sm){
                     flex-direction: column;
+                    background-color: #548084;
                     
     
                     

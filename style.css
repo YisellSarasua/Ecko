@@ -67,11 +67,13 @@
 @media screen and (max-width: 983px) {
   #Navbar .navbar ul {
     flex-direction: column;
+    background-color: #548084;
   }
 }
 @media screen and (max-width: 540px) {
   #Navbar .navbar ul {
     flex-direction: column;
+    background-color: #548084;
   }
 }
 
