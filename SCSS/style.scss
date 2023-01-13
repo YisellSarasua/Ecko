@@ -768,6 +768,8 @@ $medidaspantallas: (
 
                 width: 50%;
                 display: none;
+    
+                justify-content: center;
              
 
                 @include media-up (md){
@@ -781,6 +783,25 @@ $medidaspantallas: (
                     display: grid;
                 
                 }
+
+                img{
+
+                    @include media-up (md){
+                        max-width: 300px;
+                        max-height: 300px;
+                    
+                    }
+        
+                    @include media-up (sm){
+                        max-width: 300px;
+                        max-height: 300px;
+
+                    }
+
+                    
+                }
+
+              
 
             }
 
@@ -848,6 +869,7 @@ $medidaspantallas: (
 
                 width: 50%;
                 display: none;
+                justify-content: center;
              
 
                 @include media-up (md){
@@ -859,10 +881,31 @@ $medidaspantallas: (
                 @include media-up (sm){
     
                     display: grid;
+                    
                 
                 }
 
+                img{
+
+                    @include media-up (md){
+                        max-width: 300px;
+                        max-height: 300px;
+                        
+                    }
+        
+                    @include media-up (sm){
+
+                        max-width: 300px;
+                        max-height: 300px;
+        
+                    }
+
+                    
+                }
+
             }
+
+             
 
         }
         .reciclables{
@@ -912,18 +955,36 @@ $medidaspantallas: (
 
                 width: 50%;
                 display: none;
+                justify-content: center;
              
 
                 @include media-up (md){
 
                     display: grid;
-               
+      
                 }
     
                 @include media-up (sm){
     
                     display: grid;
-                
+ 
+                }
+
+                img{
+
+                    @include media-up (md){
+                        max-width: 300px;
+                        max-height: 300px;
+                      
+                    }
+        
+                    @include media-up (sm){
+                        max-width: 300px;
+                        max-height: 300px;
+        
+                    }
+
+                    
                 }
 
             }
@@ -1060,6 +1121,8 @@ $medidaspantallas: (
         background-repeat: no-repeat;
         background-size: cover;
 
+       
+
         .form{
 
             width: 100%;
@@ -1071,6 +1134,7 @@ $medidaspantallas: (
 
                 flex-direction: column-reverse;
                 align-items: center;
+                height: 750px;
             
             }
         
@@ -1078,6 +1142,7 @@ $medidaspantallas: (
 
                 flex-direction: column-reverse;
                 align-items: center;
+                height: 750px;
             }
          
 

@@ -566,6 +566,7 @@
 #galeria .originales .carrouselPersonajes {
   width: 50%;
   display: none;
+  justify-content: center;
 }
 @media screen and (max-width: 983px) {
   #galeria .originales .carrouselPersonajes {
@@ -575,6 +576,18 @@
 @media screen and (max-width: 540px) {
   #galeria .originales .carrouselPersonajes {
     display: grid;
+  }
+}
+@media screen and (max-width: 983px) {
+  #galeria .originales .carrouselPersonajes img {
+    max-width: 300px;
+    max-height: 300px;
+  }
+}
+@media screen and (max-width: 540px) {
+  #galeria .originales .carrouselPersonajes img {
+    max-width: 300px;
+    max-height: 300px;
   }
 }
 #galeria .customizables {
@@ -620,6 +633,7 @@
 #galeria .customizables .carrouselPersonajes {
   width: 50%;
   display: none;
+  justify-content: center;
 }
 @media screen and (max-width: 983px) {
   #galeria .customizables .carrouselPersonajes {
@@ -629,6 +643,18 @@
 @media screen and (max-width: 540px) {
   #galeria .customizables .carrouselPersonajes {
     display: grid;
+  }
+}
+@media screen and (max-width: 983px) {
+  #galeria .customizables .carrouselPersonajes img {
+    max-width: 300px;
+    max-height: 300px;
+  }
+}
+@media screen and (max-width: 540px) {
+  #galeria .customizables .carrouselPersonajes img {
+    max-width: 300px;
+    max-height: 300px;
   }
 }
 #galeria .reciclables {
@@ -664,6 +690,7 @@
 #galeria .reciclables .carrouselPersonajes {
   width: 50%;
   display: none;
+  justify-content: center;
 }
 @media screen and (max-width: 983px) {
   #galeria .reciclables .carrouselPersonajes {
@@ -673,6 +700,18 @@
 @media screen and (max-width: 540px) {
   #galeria .reciclables .carrouselPersonajes {
     display: grid;
+  }
+}
+@media screen and (max-width: 983px) {
+  #galeria .reciclables .carrouselPersonajes img {
+    max-width: 300px;
+    max-height: 300px;
+  }
+}
+@media screen and (max-width: 540px) {
+  #galeria .reciclables .carrouselPersonajes img {
+    max-width: 300px;
+    max-height: 300px;
   }
 }
 
@@ -787,12 +826,14 @@
   #contacto .fondo .form {
     flex-direction: column-reverse;
     align-items: center;
+    height: 750px;
   }
 }
 @media screen and (max-width: 540px) {
   #contacto .fondo .form {
     flex-direction: column-reverse;
     align-items: center;
+    height: 750px;
   }
 }
 #contacto .fondo .form .logoContacto {
