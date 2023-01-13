@@ -68,12 +68,14 @@
   #Navbar .navbar ul {
     flex-direction: column;
     background-color: #548084;
+    padding-right: 20px;
   }
 }
 @media screen and (max-width: 540px) {
   #Navbar .navbar ul {
     flex-direction: column;
     background-color: #548084;
+    padding-right: 20px;
   }
 }
 

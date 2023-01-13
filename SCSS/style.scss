@@ -83,15 +83,13 @@ $medidaspantallas: (
         text-align: end;
 
         @include media-up (md){
-            flex-direction: column;
-           
+            flex-direction: column;  
   
         }
 
         @include media-up (sm){
             flex-direction: column;
-           
-  
+
         }
         
 
@@ -106,6 +104,7 @@ $medidaspantallas: (
                 @include media-up (md){
                     flex-direction: column;
                     background-color: #548084;
+                    padding-right: 20px;
                     
     
                 }
@@ -113,6 +112,8 @@ $medidaspantallas: (
                 @include media-up (sm){
                     flex-direction: column;
                     background-color: #548084;
+                    padding-right: 20px;
+                    
                     
     
                     
